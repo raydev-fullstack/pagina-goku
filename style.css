@@ -17,9 +17,9 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    min-height: 90px;
+     height: 70px;
+    min-height: 70px;
     background-color: black;
-    height: 90px;
     padding: 0 32px;
     border-bottom: 1px solid rgb(255, 255, 255, 0.1 );
   
@@ -27,7 +27,7 @@ body {
 }
 
 .brand-logo {
-    width: 210px;
+    width: 180px;
     height: auto;
     display: block;
 }
@@ -72,8 +72,8 @@ a:hover {
 
 
 .dragon-icon {
-    width: 70px;
-    height: 70px;
+    width: 60px;
+    height: 60px;
     object-fit: contain;
     display: block;
 }
@@ -84,7 +84,7 @@ a:hover {
 
 .hero {
     position: relative;
-    min-height: 600px;
+    min-height: calc(100vh - 70px);
     display: flex;
     align-items: center;
     justify-content: flex-start;
@@ -93,9 +93,11 @@ a:hover {
     overflow: hidden;
 }
 
-.hero-content {
-    position: relative;
-    height: 400px;
+
+/* No hero-content tirei o height de 400px pois estava cortando os botões */
+
+.hero-content { 
+    position: relative;   
     display: flex;
     width: 50%;
     align-items: flex-start;
@@ -109,9 +111,9 @@ a:hover {
 }
 
 .hero-content h1 {
-    max-width: 600px;
-     font-size: clamp(38px, 5vw, 68px);
-    margin-bottom: 20px;
+    max-width: 520px;
+    font-size: clamp(32px, 3.5vw, 50px);
+    margin-bottom: 12px;
     min-width: 0;
     line-height: 1.05;
 
@@ -122,9 +124,9 @@ a:hover {
 }
 
 .hero-content p {
-    max-width: 580px;
-    font-size: 18px;
-    margin-bottom: 16px;
+    max-width: 540px;
+    font-size: 15px;
+    margin-bottom: 10px;
     min-width: 0;
     color: #d0d5db;
 }
@@ -150,31 +152,33 @@ a:hover {
 .hero-actions {
     display: flex;
     justify-content: space-between;
-    background-color: orangered;
-    gap: 16px;
-    margin-top: 20px;
+    
+    gap: 12px;
+    margin-top: 10px;
 }
 
 .hero-actions button {
-    min-width: 170px;
-    padding: 14px 22px;
+    min-width: 150px;
+    padding: 10px 16px;
     border: 2px solid transparent;
     border-radius: 6px;
-    font-size: 16px;
+    font-size: 14px;
     font-weight: bold;
     cursor: pointer;
     transition: 0.3s ease;
 }
 
 #btn-orange button {
-    background-color: #ff8902;
-    color:  #080d11;
+    background-color: transparent;
+    color:  white;
+     border-color: rgba(255, 255, 255, 0.5);
 }
 
 
 #btn-orange button:hover {
-    background-color: #ffac42;
+    color: #d13100;
     transform: translateY(-2px);
+    border-color: #d13100;
 }
 
 #btn-black button {
