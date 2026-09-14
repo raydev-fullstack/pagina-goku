@@ -1,8 +1,16 @@
 
-<h1>PAGINA TODA ESTILIZADA NA TEMATICA DE DRAGONBALL</h1>
+<h2>Pagina toda estilizada na tematica de <strong>Dragonball</strong></h2>
 
 
 
+
+
+
+
+
+
+
+<img src"./assets/Problema1.png" alt"Resolução-botão">
 
 ## Problemas que encontrei
 Os botões da hero estavam sendo cortados.
