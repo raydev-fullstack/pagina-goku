@@ -194,15 +194,68 @@ a:hover {
 }
 
 
-/* opacity: 0
-→ invisível
 
-visibility: hidden
-→ escondida
 
-pointer-events: none
-→ não recebe clique */
+/*personagens section */
 
+
+.personagens {
+    padding: 70px 6%;        /*padding cria espaço por dentro*/
+    background-color: #0a0a0a    /*Fundo da seção*/
+}
+
+.personagens > h2 {          /* > significa que o h2 é filho direto da classe personagens e consigo selecionar somente ele*/
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;      /* margin-bottom cria espaço entre o título e o próximo elemeto.*/
+    color: #ff8902;
+}
+
+
+
+/*grid container */
+
+.grid-container {
+    display: grid;                             /*Sistema de grade, organização dos personagens */
+    grid-template-columns: repeat(4, 1fr);        /*4 colunas de tamanho igual*/
+    gap: 24px;                                  /*espaço entre os elementos da grid*/
+    max-width: 1200px;                        /*pode diminuir, mas não passar de 1200*/
+    margin: 0 auto;                           /*centraliza a grid*/
+}
+
+
+                 
+/* body cards */
+
+.personagem {
+    background-color: #111;        /*cada personagem tem um fundo preto*/
+    border: 1px solid rgba(255, 255, 255, 0.1);
+    border-radius: 10px;            /*bordas arredondadas*/
+    padding: 20px;
+    text-align: center;
+}
+
+.personagem img {
+    width: 100%;                    /*ocupa 100% da largura disponível do elemento pai, largura do card*/
+    height: 260px;
+    object-fit: cover;              /*faz a imagem preencher o espaço do card*/ 
+    border-radius: 8px;
+}
+
+.personagem h3 {
+    color: #ff8902;
+    font-size: 22px;
+    margin: 15px 0 8px;
+}
+
+.personagem p {
+    color: #d0d5db;
+    font-size: 14px;    
+    line-height: 1.5;
+}
+
+
+/* saga */
 
 .saga {
     position: fixed;
