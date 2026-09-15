@@ -152,7 +152,6 @@ a:hover {
 .hero-actions {
     display: flex;
     justify-content: space-between;
-    
     gap: 12px;
     margin-top: 10px;
 }
@@ -201,7 +200,7 @@ a:hover {
 
 .personagens {
     padding: 70px 6%;        /*padding cria espaço por dentro*/
-    background-color: #0a0a0a    /*Fundo da seção*/
+    background-color: #000000    /*Fundo da seção*/
 }
 
 .personagens > h2 {          /* > significa que o h2 é filho direto da classe personagens e consigo selecionar somente ele*/
@@ -253,6 +252,40 @@ a:hover {
     font-size: 14px;    
     line-height: 1.5;
 }
+
+
+/* sobre os saiyajins */
+
+.sobre-saiyajin {
+    padding: 70px 6%;
+    background-color: #000000;
+}
+
+.sobre-saiyajin h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #ff8902;
+}
+
+.sobre-saiyajin p {
+    max-width: 800px;
+    margin: 0 auto;
+    font-size: 15px;
+}
+
+.sobre-saiyajin img {
+    width: 90%;
+    max-width: 800px;
+    display: block;
+    margin: 30px auto;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(209, 49, 0, 0.5);
+}
+
+
+
+
 
 
 /* saga */
