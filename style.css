@@ -193,6 +193,17 @@ a:hover {
     transform: translateY(-2px);
 }
 
+
+/* opacity: 0
+→ invisível
+
+visibility: hidden
+→ escondida
+
+pointer-events: none
+→ não recebe clique */
+
+
 .saga {
     position: fixed;
     inset: 0;
@@ -201,6 +212,16 @@ a:hover {
     justify-content: center;
      background-color: rgba(0, 0, 0, 0.7);
      z-index: 100;
+     opacity: 0;                              
+     visibility: hidden;
+     pointer-events: none;
+     transition:  0.3s ease;
+}
+
+.saga.ativo {
+    opacity: 1;
+    visibility: visible;
+    pointer-events: auto;
 }
 
 .saga-content {
