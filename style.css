@@ -175,9 +175,9 @@ a:hover {
 
 
 #btn-orange button:hover {
-    color: #d13100;
+    color: #ff8902;
     transform: translateY(-2px);
-    border-color: #d13100;
+    border-color: #ff8902;
 }
 
 #btn-black button {
@@ -192,7 +192,20 @@ a:hover {
     transform: translateY(-2px);
 }
 
+/* hero-social */
 
+.hero-social {
+    color:  #ff8902;
+    padding: 0 6%;
+    margin-top: 25px;
+
+}
+
+.hero-social ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
 
 
 /*personagens section */
@@ -200,14 +213,14 @@ a:hover {
 
 .personagens {
     padding: 70px 6%;        /*padding cria espaço por dentro*/
-    background-color: #000000    /*Fundo da seção*/
+    background-color: rgb(0, 0, 0);   /*Fundo da seção*/
 }
 
 .personagens > h2 {          /* > significa que o h2 é filho direto da classe personagens e consigo selecionar somente ele*/
     text-align: center;
     font-size: 36px;
     margin-bottom: 40px;      /* margin-bottom cria espaço entre o título e o próximo elemeto.*/
-    color: #ff8902;
+    color: #e6dada;
 }
 
 
@@ -219,7 +232,8 @@ a:hover {
     grid-template-columns: repeat(4, 1fr);        /*4 colunas de tamanho igual*/
     gap: 24px;                                  /*espaço entre os elementos da grid*/
     max-width: 1200px;                        /*pode diminuir, mas não passar de 1200*/
-    margin: 0 auto;                           /*centraliza a grid*/
+    margin: 0 auto;      
+                                              /*centraliza a grid*/
 }
 
 
@@ -227,11 +241,21 @@ a:hover {
 /* body cards */
 
 .personagem {
-    background-color: #111;        /*cada personagem tem um fundo preto*/
-    border: 1px solid rgba(255, 255, 255, 0.1);
+    background-color: transparent;        /*cada personagem tem um fundo preto*/
+    border: 0px solid rgba(255, 255, 255, 0.1);
     border-radius: 10px;            /*bordas arredondadas*/
     padding: 20px;
     text-align: center;
+    box-shadow: 0 0 2px rgb(168, 165, 165) ;
+}
+
+.personagem:hover {
+    transform: translateY(-5px);      /*quando passar o mouse, o card sobe 5px*/
+    box-shadow: 0 0 5px rgb(255, 137, 2);   /*quando passar o mouse, a sombra do card fica laranja*/
+    transition: all 0.3s ease;        /*transição suave de todos os efeitos*/
+    background-color: #ff8902;
+    transform: translateY(-2px);
+    border-color: #ff8902;
 }
 
 .personagem img {
@@ -242,13 +266,13 @@ a:hover {
 }
 
 .personagem h3 {
-    color: #ff8902;
+    color: #000000;
     font-size: 22px;
     margin: 15px 0 8px;
 }
 
 .personagem p {
-    color: #d0d5db;
+    color: #000000;
     font-size: 14px;    
     line-height: 1.5;
 }
@@ -265,7 +289,7 @@ a:hover {
     text-align: center;
     font-size: 36px;
     margin-bottom: 40px;
-    color: #ff8902;
+    color: #dad3cc;
 }
 
 .sobre-saiyajin p {
@@ -280,7 +304,7 @@ a:hover {
     display: block;
     margin: 30px auto;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgba(209, 49, 0, 0.5);
+    box-shadow: 0 0 5px ;
 }
 
 
@@ -311,29 +335,29 @@ a:hover {
 }
 
 .saga-content {
-    width: 90%;
+    width: 30%;
     max-width: 600px;
-    background-color: #111;
-    border: 2px solid #ff8902;
+    background-color:  rgba(0, 0, 0, 0.9);
+    border: 1px solid #ff8902;
     padding: 30px;
     border-radius: 12px;
     color: white;
-    box-shadow: 0 0 10px rgba(255, 137, 2, 0.5);
+    box-shadow: 0 0 8px rgba(255, 137, 2, 0.5);
 }
 
 .saga-content h2 {
     color: #ff8902;
-    font-size: 24px;
-    margin-bottom: 15px;
+    font-size: 19px;
+    margin-bottom: 10px;
     text-align: center;
 }
 
 .saga-content p {
     color: #d0d5db;
-    font-size: 16px;
+    font-size: 13px;
     line-height: 1.5;
     text-align: center;
-    margin-bottom: 20px;
+    margin-bottom: 15px;
 }
 
 .saga-list {
@@ -341,8 +365,8 @@ a:hover {
 }
 
 .saga-list li {
-    padding: 10px 12px;
-    margin-bottom: 8px;
+    padding: 5px 5px;
+    margin-bottom: 5px;
     background-color: rgba(255, 255, 255, 0.05);
     border-left: 3px solid #ff8902;
     border-radius: 4px;
